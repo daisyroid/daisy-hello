@@ -48,7 +48,7 @@ $Style = @(
 # 字幕表示のffmpegコマンド1（0.0秒～1.7秒）
 $T1 = @(
   "drawtext=${Style}",
-  "text='こんにちはデイジーです。'",
+  "text='こんにちは デイジーです。'",
   "enable='between(t,0.0,1.7)'"
 ) -join ":"
 
@@ -68,7 +68,7 @@ $T3 = @(
 
 # ffmpegのコマンドライン引数
 $Args = @(
-  "-loglevel", "error"    # レベルerror以上の警告を出力
+  "-loglevel", "error"    # 警告レベル"error"以上を出力、"trace"で詳細出力
   "-loop", "1"            # 静止画1枚を表示
   "-t", "8"               # 8秒で止める
   "-r", "10"              # 毎秒10フレーム
