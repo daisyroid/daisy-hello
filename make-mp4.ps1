@@ -78,7 +78,7 @@ $Args = @(
   "-tune", "stillimage"   # 静止画の場合はこれをつけるとよいらしい
   "-c:v", "libx264"       # ビデオ形式 H264
   "-c:a", "aac"           # 音声形式 aac
-  "-pix_fmt", "yuv420p"   # ピクセル形式 yuv402p
+  "-pix_fmt", "yuv420p"   # ピクセル形式 yuv420p
   "-y", $VideoFile        # 既存のファイルがあれば上書き
 )
 
